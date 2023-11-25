@@ -1,7 +1,10 @@
 class Sqrtx {
-    public int mySqrt(int x) {
+    public static int mySqrt(int x) {
 
-        return (int)Math.sqrt(x);
-
+        long i = 0;
+        while (i*i <= x) {
+            i++;
+        }
+        return (int)i-1;
     }
 }
